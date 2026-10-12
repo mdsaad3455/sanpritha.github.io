@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>SANPRITHA PRIVATE LIMITED — Intelligent Logistics</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Inter:wght@400;500&family=Noto+Sans+Devanagari:wght@500;700&family=Noto+Sans+Telugu:wght@500;700&family=Noto+Sans+Tamil:wght@500;700&family=Noto+Sans+Gujarati:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0D0E12;--ac:#FF6B00;--sf:#1A1D24;--tx:#E9EAEE;--mu:#8A8F9C;--bd:rgba(255,107,0,.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Inter,"Noto Sans Devanagari","Noto Sans Telugu","Noto Sans Tamil","Noto Sans Gujarati",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.d{font-family:Syne,"Noto Sans Devanagari","Noto Sans Telugu","Noto Sans Tamil","Noto Sans Gujarati",system-ui,sans-serif;line-height:1.05;margin:0}html:not([lang=en]) h1,html:not([lang=en]) h2{line-height:1.3}html:not([lang=en]) h1{font-size:clamp(30px,5vw,58px)}
+#glow{position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(500px circle at var(--x,50%) var(--y,30%),rgba(255,107,0,.13),transparent 60%)}
+main,header,footer{position:relative;z-index:1}section{max-width:1200px;margin:0 auto;padding:88px 20px}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:18px 20px}
+.logo{font-family:Syne;font-weight:800;letter-spacing:.12em;color:var(--ac)}nav a{color:var(--mu);text-decoration:none;margin-left:20px;font-size:14px}nav a:hover{color:var(--tx)}
+.card{background:rgba(26,29,36,.7);border:1px solid var(--bd);border-radius:20px;padding:24px;backdrop-filter:blur(14px);box-shadow:0 0 0 1px rgba(255,255,255,.03) inset}
+.tag{color:var(--ac);font:500 12px Inter;letter-spacing:.2em;text-transform:uppercase}
+h2{font-size:clamp(30px,5vw,54px);font-weight:800;margin:8px 0 32px}
+.btn{background:var(--ac);color:#111;border:0;border-radius:12px;padding:13px 22px;font:600 15px Inter;cursor:pointer;transition:transform .4s cubic-bezier(.34,1.56,.64,1),box-shadow .3s}
+.btn:hover,.btn:focus-visible{transform:scale(1.06);box-shadow:0 0 28px rgba(255,107,0,.55)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px}
+.rv{opacity:0;transform:translateY(40px) scale(.97);transition:opacity .7s,transform .9s cubic-bezier(.34,1.4,.64,1)}.rv.in{opacity:1;transform:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;min-height:86vh}
+h1{font-size:clamp(38px,6.4vw,84px);font-weight:800}h1 span{color:var(--ac)}
+.hero p{color:var(--mu);max-width:520px;margin:20px 0}
+#globe{width:100%;aspect-ratio:1;max-height:520px}
+.track{display:flex;gap:8px;flex-wrap:wrap;padding:14px;max-width:520px}
+input,select,textarea{background:#0D0E12;border:1px solid #2A2E38;color:var(--tx);border-radius:12px;padding:13px 14px;font:inherit;width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--ac);outline:0;box-shadow:0 0 0 3px rgba(255,107,0,.2)}
+.track input{flex:1;min-width:160px}
+dialog{background:var(--sf);color:var(--tx);border:1px solid var(--bd);border-radius:20px;max-width:440px;width:92%;padding:28px}dialog::backdrop{background:rgba(0,0,0,.7);backdrop-filter:blur(6px)}
+.st{display:flex;gap:14px;margin:0;padding:0;list-style:none}.stl{display:flex;flex-direction:column;gap:18px;padding:0;margin:18px 0;list-style:none}
+.stl li{display:flex;gap:14px;align-items:center;color:var(--mu)}.stl i{width:14px;height:14px;border-radius:50%;border:2px solid #444;flex:none}.stl .ok{color:var(--tx)}.stl .ok i{background:var(--ac);border-color:var(--ac);box-shadow:0 0 12px var(--ac)}
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.sel{grid-column:span 5;display:flex;flex-direction:column;gap:10px}.stage{grid-column:span 7;perspective:900px;display:grid;place-items:center;min-height:260px}
+.pick{display:flex;justify-content:space-between;text-align:left;background:transparent;color:var(--tx);border:1px solid #2A2E38;border-radius:14px;padding:14px 16px;font:500 15px Inter;cursor:pointer;transition:.35s cubic-bezier(.34,1.56,.64,1)}
+.pick[aria-pressed=true]{border-color:var(--ac);background:rgba(255,107,0,.1);transform:translateX(8px)}
+#truck{width:min(380px,90%);transition:transform 1.2s cubic-bezier(.34,1.3,.64,1);transform-style:preserve-3d;cursor:pointer}
+.specs{grid-column:span 12;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.specs .card b{display:block;font:800 clamp(24px,3.4vw,40px) Syne;color:var(--ac);transition:opacity .3s}.specs small{color:var(--mu)}
+.bar{height:6px;background:#2A2E38;border-radius:9px;margin-top:12px;overflow:hidden}.bar i{display:block;height:100%;background:var(--ac);width:50%;transition:width 1s cubic-bezier(.34,1.4,.64,1)}
+.term{grid-column:span 5;font-family:ui-monospace,Menlo,monospace}.map{grid-column:span 7}#wm{width:100%;height:auto;border-radius:14px;display:block}.mapl{display:flex;gap:6px 16px;flex-wrap:wrap;margin-top:12px;font-size:13px;color:var(--mu)}.mapl a{color:var(--ac)}#lang{width:auto;padding:8px 10px;margin-left:16px;font-size:14px}.ex{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-top:0}.ex b{font:800 22px Syne;color:var(--ac);display:block;margin-bottom:4px}.ex span{color:var(--mu)}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}.kpi b{display:block;font:800 26px Syne;color:var(--ac)}.kpi small{color:var(--mu);font-size:12px}
+#chart{width:100%;height:110px}#log{font-size:12px;color:var(--mu);margin-top:8px;min-height:3.4em}
+.live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3DDC84;margin-right:6px;animation:p 1s infinite}@keyframes p{50%{opacity:.25}}
+.lane{stroke:var(--ac);fill:none;stroke-width:1.5;stroke-dasharray:6 6;animation:d 1.4s linear infinite}@keyframes d{to{stroke-dashoffset:-24}}
+.reg{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}.reg .card{grid-column:span 2}.reg .w{grid-column:span 3}.reg .f{grid-column:span 6}
+.reg small{color:var(--mu);display:block}.reg b{font-weight:500;word-break:break-word}
+.vb{display:inline-flex;vertical-align:middle;color:#3DDC84;margin-left:6px}
+.dir{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.dir .card{text-align:center;transition:transform .15s;transform-style:preserve-3d;will-change:transform}
+.av{width:96px;height:96px;border-radius:50%;margin:0 auto 14px;background:linear-gradient(135deg,#2A2E38,#1A1D24);border:1px solid var(--bd);display:grid;place-items:center;color:var(--ac)}
+.dir a{color:var(--mu);display:inline-flex;margin-top:12px;transition:.3s}.dir a:hover{color:var(--ac);transform:scale(1.2)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:820px;margin:auto}form .f{grid-column:span 2}label{font-size:13px;color:var(--mu);display:block;margin-bottom:6px}
+.beam{position:relative;border-radius:14px;padding:2px;overflow:hidden;background:#2A2E38;border:0;cursor:pointer;width:100%;transition:transform .4s cubic-bezier(.34,1.56,.64,1)}
+.beam:hover{transform:scale(1.02)}.beam:before{content:"";position:absolute;inset:-100%;background:conic-gradient(from 0deg,transparent 70%,var(--ac) 95%,transparent);animation:r 2.4s linear infinite}@keyframes r{to{transform:rotate(1turn)}}
+.beam span{position:relative;display:flex;justify-content:center;gap:8px;align-items:center;background:var(--sf);color:var(--tx);border-radius:12px;padding:15px;font:600 15px Inter}
+.beam.done:before{background:#3DDC84;animation:none}.beam.done span{color:#3DDC84}
+footer{border-top:1px solid #1f232b;padding:48px 20px 32px;color:var(--mu);font-size:14px}.fg{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}
+footer a{color:var(--mu);display:block;text-decoration:none;margin:6px 0}footer a:hover{color:var(--ac)}.soc{display:flex;gap:10px}.soc a{border:1px solid #2A2E38;border-radius:50%;width:38px;height:38px;display:grid;place-items:center}
+@media(max-width:860px){.hero{grid-template-columns:1fr;min-height:0}.sel,.stage,.term,.map{grid-column:span 12}.specs,.dir,.ex{grid-template-columns:1fr}.reg .card,.reg .w{grid-column:span 6}.fg{grid-template-columns:1fr}form{grid-template-columns:1fr}form .f{grid-column:span 1}nav a{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style></head><body><div id="glow"></div>
+<header><nav aria-label="Primary"><span class="logo">SANPRITHA</span><div><a href="#cargo">Cargo</a><a href="#ops">Operations</a><a href="#corp">Credentials</a><a href="#board">Board</a><a href="#contact">Contact</a><select id="lang" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="te">తెలుగు</option><option value="ta">தமிழ்</option><option value="gu">ગુજરાતી</option></select></div></nav></header>
+<main>
+<section class="hero"><div class="rv"><span class="tag">Sanpritha Private Limited · Haryana, India</span>
+<h1 id="h1" style="margin-top:14px">INTELLIGENT LOGISTICS. <span>RE-ENGINEERED</span> FOR ENTERPRISES.</h1>
+<p>Enterprise freight orchestration out of the Delhi-NCR corridor, built on real-time visibility and data-driven routing.</p>
+<form class="card track" id="tf" style="display:flex;max-width:520px" aria-label="Track shipment"><label for="tid" style="position:absolute;left:-9999px">Tracking ID</label><input id="tid" placeholder="Try SAN-9921" autocomplete="off" required><button class="btn" type="submit">Track Shipment</button></form></div>
+<canvas id="globe" class="rv" role="img" aria-label="Animated 3D global logistics network"></canvas></section>
+<dialog id="dlg" aria-labelledby="dt"><h3 id="dt" class="d" style="font-size:26px">Shipment</h3><ol class="stl" id="stl"></ol><button class="btn" onclick="dlg.close()">Close</button></dialog>
+
+<section class="ex" aria-label="Overview"><div class="card rv"><b>Book</b><span>Tell us what you ship and where.</span></div><div class="card rv"><b>Track</b><span>See every shipment live, step by step.</span></div><div class="card rv"><b>Deliver</b><span>On time, across India and the world.</span></div></section>
+<section id="cargo"><span class="tag">Freight Types</span><h2>Select your cargo class.</h2>
+<div class="bento"><div class="sel rv" id="sel"></div>
+<div class="card stage rv"><svg id="truck" viewBox="0 0 400 200" role="img" aria-label="3D cargo unit — click to rotate"><ellipse cx="200" cy="178" rx="170" ry="9" fill="#000" opacity=".5"/><g id="tr"><rect x="20" y="40" width="250" height="100" rx="8" fill="#1A1D24" stroke="#FF6B00" stroke-width="2"/><text id="tlab" x="145" y="98" text-anchor="middle" fill="#FF6B00" font-family="Syne" font-weight="800" font-size="22">DRY VAN</text><path d="M278 70h62l34 40v30h-96z" fill="#252932" stroke="#FF6B00" stroke-width="2"/><path d="M290 80h42l22 28h-64z" fill="#FF6B00" opacity=".3"/><g fill="#0D0E12" stroke="#FF6B00" stroke-width="3"><circle cx="70" cy="150" r="20"/><circle cx="125" cy="150" r="20"/><circle cx="320" cy="150" r="20"/></g></g></svg></div>
+<div class="specs" id="specs"><div class="card rv"><small>Temperature Range</small><b id="s1"></b><div class="bar"><i id="b1"></i></div></div><div class="card rv"><small>Max Payload</small><b id="s2"></b><div class="bar"><i id="b2"></i></div></div><div class="card rv"><small>Transit Velocity</small><b id="s3"></b><div class="bar"><i id="b3"></i></div></div></div></div>
+<p style="color:var(--mu);font-size:13px">Illustrative specifications for presentation purposes; confirm exact capacities with our operations team.</p></section>
+
+<section id="ops"><span class="tag"><i class="live"></i>Live fleet view · Demo data</span><h2>See our fleet in motion.</h2>
+<div class="bento"><div class="card term rv"><div class="kpi"><div><b id="k1">0</b><small>Active units</small></div><div><b id="k2">0</b><small>Avg km/h</small></div><div><b id="k3">0</b><small>On-time %</small></div></div><canvas id="chart"></canvas><div id="log" aria-live="off"></div></div>
+<div class="card map rv"><svg id="wm" viewBox="0 0 700 360" role="img" aria-label="Cargo corridors from Faridabad, Haryana"></svg><div class="mapl"><span>Corridors: coordinates are real, coastlines simplified.</span><a href="https://www.openstreetmap.org/search?query=Mohna%2C%20Ballabgarh%2C%20Faridabad" target="_blank" rel="noopener">View our office on OpenStreetMap ↗</a></div></div></div></section>
+
+<section id="corp"><span class="tag">Corporate Transparency</span><h2>Verified. Registered. Accountable.</h2>
+<div class="reg"><div class="card w rv"><small>Company Name</small><b>SANPRITHA PRIVATE LIMITED</b></div>
+<div class="card w rv"><small>Corporate Identification Number (CIN)</small><b>U52292HR2026PTC149483</b><span class="vb" title="Verified" aria-label="Verified"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 2l2.4 2 3.1-.3.8 3 2.7 1.6-1 3 1 3-2.7 1.6-.8 3-3.1-.3L12 22l-2.4-2-3.1.3-.8-3L3 15.7l1-3-1-3 2.7-1.6.8-3 3.1.3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span></div>
+<div class="card rv"><small>Incorporation Date</small><b>20 August 2026</b></div><div class="card rv"><small>Registrar of Companies</small><b>RoC – Haryana</b></div><div class="card rv"><small>NIC Activity Code</small><b>52292 · Other transportation support services</b></div>
+<div class="card f rv"><small>Registered Office</small><b>975, Jhalaka, Mohna, Ballabgarh, Faridabad, Haryana, India – 121004</b></div></div></section>
+
+<section id="board"><span class="tag">Leadership</span><h2>Board of Directors.</h2><div class="dir" id="dir"></div></section>
+
+<section id="contact"><span class="tag">Enterprise Enquiries</span><h2>Initiate Global Logistics Assessment</h2>
+<form class="card rv" id="cf"><div><label for="c1">Company Name</label><input id="c1" required autocomplete="organization"></div><div><label for="c2">Corporate Email</label><input id="c2" type="email" required autocomplete="email"></div>
+<div class="f"><label for="c3">Estimated Monthly Freight Volume</label><select id="c3" required><option value="">Select volume</option><option>10–50 Tons</option><option>50–500 Tons</option><option>500+ Tons</option></select></div>
+<div class="f"><label for="c4">Route Requirements</label><textarea id="c4" rows="3"></textarea></div>
+<div class="f"><button class="beam" id="sb" type="submit"><span id="sl">Request Assessment</span></button></div></form></section>
+</main>
+<footer><div class="fg"><div><div class="logo">SANPRITHA</div><p>SANPRITHA PRIVATE LIMITED<br>CIN: U52292HR2026PTC149483<br>975, Jhalaka, Mohna, Ballabgarh, Faridabad, Haryana, India – 121004</p></div>
+<div><b style="color:var(--tx)">Legal</b><a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">Compliance</a></div>
+<div><b style="color:var(--tx)">Connect</b><div class="soc"><a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg></a><a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M20 4L4 20"/></svg></a></div></div></div>
+<p style="text-align:center;margin-top:32px">Built for Scale © 2026 Sanpritha Private Limited</p></footer>
+<script>
+const $=id=>document.getElementById(id),R=Math.random;
+addEventListener('pointermove',e=>{const s=$('glow').style;s.setProperty('--x',e.clientX+'px');s.setProperty('--y',e.clientY+'px')});
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+/* Globe */
+const g=$('globe'),x=g.getContext('2d'),P=[],A=[];let t=0;
+for(let i=0;i<260;i++){const a=R()*6.283,b=Math.acos(2*R()-1);P.push([Math.sin(b)*Math.cos(a),Math.cos(b),Math.sin(b)*Math.sin(a)])}
+for(let i=0;i<12;i++)A.push([P[i*7],P[i*7+90],R()]);
+function pr(p,c,s,r){const cs=Math.cos(t),sn=Math.sin(t),X=p[0]*cs+p[2]*sn,Z=-p[0]*sn+p[2]*cs;return[c+X*r,s-p[1]*r,Z]}
+function draw(){const w=g.clientWidth*2,h=g.clientHeight*2;if(g.width!==w){g.width=w;g.height=h}x.clearRect(0,0,w,h);const c=w/2,s=h/2,r=Math.min(w,h)*.4;t+=.004;
+x.strokeStyle='rgba(255,107,0,.12)';x.beginPath();x.arc(c,s,r,0,7);x.stroke();
+P.forEach(p=>{const q=pr(p,c,s,r);x.fillStyle=`rgba(255,${120+q[2]*60|0},40,${.25+.5*(q[2]+1)/2})`;x.fillRect(q[0],q[1],3,3)});
+A.forEach(a=>{const u=pr(a[0],c,s,r),v=pr(a[1],c,s,r);if(u[2]<-.2&&v[2]<-.2)return;const mx=(u[0]+v[0])/2,my=(u[1]+v[1])/2-r*.35;
+x.strokeStyle='rgba(255,107,0,.35)';x.beginPath();x.moveTo(u[0],u[1]);x.quadraticCurveTo(mx,my,v[0],v[1]);x.stroke();
+a[2]=(a[2]+.006)%1;const k=a[2],px=(1-k)**2*u[0]+2*(1-k)*k*mx+k*k*v[0],py=(1-k)**2*u[1]+2*(1-k)*k*my+k*k*v[1];
+x.shadowColor='#FF6B00';x.shadowBlur=18;x.fillStyle='#FF6B00';x.beginPath();x.arc(px,py,4,0,7);x.fill();x.shadowBlur=0});
+requestAnimationFrame(draw)}draw();
+/* Tracking */
+const steps=['Order received','Picked up','In transit','Customs clearance','Out for delivery','Delivered'];
+$('tf').onsubmit=e=>{e.preventDefault();const v=$('tid').value.trim().toUpperCase(),l=$('stl');l.innerHTML='';
+if(v==='SAN-9921'){$('dt').textContent='SAN-9921 · '+tr('In transit');steps.forEach((s,i)=>{const li=document.createElement('li');li.innerHTML='<i></i>'+tr(s);l.appendChild(li);if(i<3)setTimeout(()=>li.classList.add('ok'),250*(i+1))})}
+else{$('dt').textContent=tr('No match');l.textContent=v+' · try SAN-9921'}
+$('dlg').showModal()};
+/* Cargo */
+const C=[['Dry Van','+5°C to +40°C','24 T','65 km/h',[50,60,65]],['Reefer / Cold Chain','−25°C to +8°C','20 T','60 km/h',[40,50,60]],['Oversized Cargo','Ambient','60 T','35 km/h',[95,95,30]],['Flatbed','Ambient','28 T','55 km/h',[60,65,55]]];
+let rot=0;function pick(i,n){document.querySelectorAll('.pick').forEach((b,j)=>b.setAttribute('aria-pressed',i==j));const c=C[i];$('tlab').textContent=c[0].split(' ')[0].toUpperCase()+(i==0?' VAN':'');
+['s1','s2','s3'].forEach((id,k)=>{$(id).style.opacity=0;setTimeout(()=>{$(id).textContent=c[k+1];$(id).style.opacity=1},200);$('b'+(k+1)).style.width=c[4][k]+'%'});n||spinIt()}
+C.forEach((c,i)=>{const b=document.createElement('button');b.className='pick';b.innerHTML=`<span>${c[0]}</span><span>→</span>`;b.onclick=()=>pick(i);$('sel').appendChild(b)});
+let spin=false;const T=$('truck'),SG=document.querySelector('.stage');
+function spinIt(){if(spin)return;spin=true;rot+=360;T.style.transition='transform 1.8s cubic-bezier(.45,0,.2,1)';T.style.transform=`rotateY(${rot}deg)`;setTimeout(()=>spin=false,1900)}
+T.onclick=spinIt;
+SG.onpointermove=e=>{if(spin)return;const r=SG.getBoundingClientRect();T.style.transition='transform .35s ease-out';T.style.transform=`rotateY(${rot+((e.clientX-r.left)/r.width-.5)*36}deg)`};
+SG.onpointerleave=()=>{if(!spin){T.style.transition='transform .6s ease-out';T.style.transform=`rotateY(${rot}deg)`}};pick(0,1);
+/* Ops */
+const h=Array(60).fill(50),cv=$('chart'),cx=cv.getContext('2d'),ln=['NCR → JNPT','NCR → Chennai Port','NCR → Jebel Ali','NCR → Singapore','NCR → Rotterdam'];
+setInterval(()=>{h.push(Math.max(10,Math.min(95,h[59]+(R()-.5)*20)));h.shift();
+$('k1').textContent=(1200+R()*80|0).toLocaleString();$('k2').textContent=52+R()*14|0;$('k3').textContent=(96+R()*3).toFixed(1);
+const w=cv.width=cv.clientWidth*2,hh=cv.height=220;cx.clearRect(0,0,w,hh);cx.strokeStyle='#FF6B00';cx.lineWidth=3;cx.beginPath();h.forEach((v,i)=>cx[i?'lineTo':'moveTo'](i*w/59,hh-v*hh/100));cx.stroke();
+$('log').textContent=`${ln[R()*5|0]} · ${(28.3+R()*.4).toFixed(4)}°N ${(77.2+R()*.5).toFixed(4)}°E · ${40+R()*30|0} km/h`},500);
+/* Map */
+const W=[[[-17,15],[-10,35],[10,37],[32,31],[43,12],[51,12],[40,-15],[33,-27],[20,-35],[12,-17],[9,4],[-8,4]],[[-10,36],[-9,43],[-1,48],[3,51],[8,54],[10,58],[20,70],[30,70],[40,60],[30,45],[26,40],[12,38]],[[30,45],[40,60],[60,70],[100,77],[140,72],[170,66],[140,45],[122,30],[120,22],[108,10],[104,1],[98,8],[92,22],[80,8],[73,17],[67,25],[56,26],[50,30],[35,30],[27,38]],[[35,30],[43,13],[52,16],[58,22],[56,26],[50,30]]];
+const M=(o,a)=>[(o+15)*5,(62-a)*5],hub=M(77.3,28.4),CT=[['Mumbai (JNPT)',72.95,18.95],['Chennai',80.29,13.08],['Kolkata',88.36,22.57],['Mundra',69.72,22.84],['Dubai',55.1,25],['Singapore',103.8,1.26],['Rotterdam',4.14,51.95]];
+let ms='<rect width="700" height="360" fill="#0f1116"/>'+W.map(p=>'<path d="M'+p.map(q=>M(...q).join(',')).join('L')+'Z" fill="#232733" stroke="#2f3442"/>').join('');
+CT.forEach(c=>{const p=M(c[1],c[2]),d=Math.hypot(p[0]-hub[0],p[1]-hub[1]);ms+=`<path class="lane" d="M${hub}Q${(p[0]+hub[0])/2},${(p[1]+hub[1])/2-d*.25} ${p}"/><circle cx="${p[0]}" cy="${p[1]}" r="4" fill="#FF6B00"/><text x="${p[0]+7}" y="${p[1]+4}" fill="#E9EAEE" font-size="12">${c[0]}</text>`});
+ms+=`<circle cx="${hub[0]}" cy="${hub[1]}" r="7" fill="#FF6B00"/><circle cx="${hub[0]}" cy="${hub[1]}" r="8" fill="none" stroke="#FF6B00"><animate attributeName="r" values="8;26" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".7;0" dur="1.8s" repeatCount="indefinite"/></circle><text x="${hub[0]-12}" y="${hub[1]-14}" fill="#FF6B00" font-size="13" font-weight="700" text-anchor="end">Faridabad HQ</text>`;
+$('wm').innerHTML=ms;
+/* Directors */
+[['Gaurav','11903095'],['Aman Singh Attri','11903096'],['Yashar Ali','11903097']].forEach(d=>{const c=document.createElement('div');c.className='card rv';
+c.innerHTML=`<div class="av"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></svg></div><h3 class="d" style="font-size:22px">${d[0]}</h3><div style="color:var(--ac);font-size:14px">Director</div><small style="color:var(--mu)">DIN: ${d[1]}</small><br><a href="#" aria-label="${d[0]} on LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg></a>`;
+c.onpointermove=e=>{const r=c.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${px*14}deg) rotateX(${-py*14}deg) scale(1.03)`};c.onpointerleave=()=>c.style.transform='';$('dir').appendChild(c);io.observe(c)});
+/* Form */
+$('cf').onsubmit=e=>{e.preventDefault();const b=$('sb');b.classList.add('done');$('sl').innerHTML='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg> '+tr('Assessment request received');b.disabled=true;
+setTimeout(()=>{b.classList.remove('done');b.disabled=false;$('sl').textContent=tr('Request Assessment');$('cf').reset()},4000)};
+
+/* i18n */
+const D={'Cargo':['कार्गो','కార్గో','சரக்கு','કાર્ગો'],'Operations':['संचालन','కార్యకలాపాలు','செயல்பாடுகள்','સંચાલન'],'Credentials':['प्रमाण-पत्र','ధృవపత్రాలు','சான்றுகள்','પ્રમાણપત્રો'],'Board':['बोर्ड','బోర్డు','குழு','બોર્ડ'],'Contact':['संपर्क','సంప్రదించండి','தொடர்பு','સંપર્ક'],
+'Enterprise freight orchestration out of the Delhi-NCR corridor, built on real-time visibility and data-driven routing.':['दिल्ली-एनसीआर से उद्यमों के लिए माल ढुलाई — रीयल-टाइम ट्रैकिंग और डेटा-आधारित रूटिंग के साथ।','ఢిల్లీ-ఎన్‌సీఆర్ నుండి సంస్థల కోసం సరుకు రవాణా — రియల్-టైమ్ ట్రాకింగ్, డేటా ఆధారిత రూటింగ్‌తో.','டெல்லி-என்சிஆர் பகுதியிலிருந்து நிறுவனங்களுக்கான சரக்கு போக்குவரத்து — நேரடி கண்காணிப்பு, தரவு சார்ந்த வழித்தடங்களுடன்.','દિલ્હી-એનસીઆરથી એન્ટરપ્રાઇઝ માટે માલ પરિવહન — રિયલ-ટાઇમ ટ્રેકિંગ અને ડેટા આધારિત રૂટિંગ સાથે.'],
+'Track Shipment':['शिपमेंट ट्रैक करें','షిప్‌మెంట్ ట్రాక్ చేయండి','ஷிப்மெண்டைக் கண்காணிக்கவும்','શિપમેન્ટ ટ્રૅક કરો'],'Try SAN-9921':['SAN-9921 आज़माएँ','SAN-9921 ప్రయత్నించండి','SAN-9921 முயற்சிக்கவும்','SAN-9921 અજમાવો'],
+'Book':['बुक करें','బుక్ చేయండి','முன்பதிவு','બુક કરો'],'Tell us what you ship and where.':['बताइए क्या और कहाँ भेजना है।','ఏమి, ఎక్కడికి పంపాలో చెప్పండి.','என்ன, எங்கே அனுப்ப வேண்டும் என்று சொல்லுங்கள்.','શું અને ક્યાં મોકલવું તે જણાવો.'],
+'Track':['ट्रैक करें','ట్రాక్ చేయండి','கண்காணிப்பு','ટ્રૅક કરો'],'See every shipment live, step by step.':['हर शिपमेंट को लाइव, चरण-दर-चरण देखें।','ప్రతి షిప్‌మెంట్‌ను లైవ్‌గా, దశలవారీగా చూడండి.','ஒவ்வொரு ஷிப்மெண்டையும் நேரலையில் படிப்படியாகப் பாருங்கள்.','દરેક શિપમેન્ટ લાઇવ, પગલે-પગલે જુઓ.'],
+'Deliver':['पहुँचाएँ','డెలివరీ','டெலிவரி','ડિલિવર'],'On time, across India and the world.':['समय पर, भारत और दुनिया भर में।','సమయానికి, భారతదేశం & ప్రపంచమంతటా.','சரியான நேரத்தில், இந்தியா மற்றும் உலகெங்கும்.','સમયસર, ભારત અને વિશ્વભરમાં.'],
+'Freight Types':['माल के प्रकार','సరుకు రకాలు','சரக்கு வகைகள்','માલના પ્રકારો'],'Select your cargo class.':['अपना कार्गो प्रकार चुनें।','మీ కార్గో రకాన్ని ఎంచుకోండి.','உங்கள் சரக்கு வகையைத் தேர்வுசெய்யுங்கள்.','તમારો કાર્ગો પ્રકાર પસંદ કરો.'],
+'Dry Van':['ड्राई वैन','డ్రై వ్యాన్','டிரை வேன்','ડ્રાય વેન'],'Reefer / Cold Chain':['रीफर / कोल्ड चेन','రీఫర్ / కోల్డ్ చైన్','ரீஃபர் / குளிர் சங்கிலி','રીફર / કોલ્ડ ચેઇન'],'Oversized Cargo':['भारी/बड़ा कार्गो','భారీ కార్గో','பெரிய சரக்கு','મોટો કાર્ગો'],'Flatbed':['फ्लैटबेड','ఫ్లాట్‌బెడ్','பிளாட்பெட்','ફ્લેટબેડ'],
+'Temperature Range':['तापमान सीमा','ఉష్ణోగ్రత పరిధి','வெப்பநிலை வரம்பு','તાપમાન શ્રેણી'],'Max Payload':['अधिकतम भार','గరిష్ఠ బరువు','அதிகபட்ச சுமை','મહત્તમ વજન'],'Transit Velocity':['ट्रांज़िट गति','రవాణా వేగం','பயண வேகம்','પરિવહન ગતિ'],
+'Illustrative specifications for presentation purposes; confirm exact capacities with our operations team.':['ये विनिर्देश केवल उदाहरण हैं; सटीक क्षमता के लिए हमारी टीम से पुष्टि करें।','ఇవి ఉదాహరణ స్పెసిఫికేషన్లు మాత్రమే; ఖచ్చితమైన సామర్థ్యం కోసం మా బృందాన్ని సంప్రదించండి.','இவை எடுத்துக்காட்டு விவரங்கள் மட்டுமே; சரியான திறனுக்கு எங்கள் குழுவைத் தொடர்புகொள்ளுங்கள்.','આ ફક્ત ઉદાહરણ વિગતો છે; ચોક્કસ ક્ષમતા માટે અમારી ટીમનો સંપર્ક કરો.'],
+'Live fleet view · Demo data':['लाइव फ्लीट व्यू · डेमो डेटा','లైవ్ ఫ్లీట్ వ్యూ · డెమో డేటా','நேரலை வாகன நிலை · டெமோ தரவு','લાઇવ ફ્લીટ વ્યૂ · ડેમો ડેટા'],'See our fleet in motion.':['हमारा बेड़ा चलते हुए देखें।','మా ఫ్లీట్ కదలికలో చూడండి.','எங்கள் வாகனங்கள் இயங்குவதைப் பாருங்கள்.','અમારો કાફલો ગતિમાં જુઓ.'],
+'Active units':['सक्रिय वाहन','క్రియాశీల వాహనాలు','செயலில் உள்ள வாகனங்கள்','સક્રિય વાહનો'],'Avg km/h':['औसत किमी/घंटा','సగటు కిమీ/గం','சராசரி கிமீ/ம','સરેરાશ કિમી/કલાક'],'On-time %':['समय पर %','సమయానికి %','நேரத்தில் %','સમયસર %'],
+'Corridors: coordinates are real, coastlines simplified.':['मार्ग: स्थान वास्तविक, तटरेखा सरल।','మార్గాలు: స్థానాలు నిజమైనవి, తీరరేఖలు సరళీకృతం.','வழித்தடங்கள்: இடங்கள் உண்மையானவை, கடற்கரைகள் எளிமையாக்கப்பட்டவை.','માર્ગો: સ્થાન વાસ્તવિક, દરિયાકિનારો સરળ.'],
+'View our office on OpenStreetMap ↗':['OpenStreetMap पर हमारा कार्यालय देखें ↗','OpenStreetMap‌లో మా కార్యాలయం చూడండి ↗','OpenStreetMap-இல் எங்கள் அலுவலகம் ↗','OpenStreetMap પર અમારી ઓફિસ જુઓ ↗'],
+'Corporate Transparency':['कॉर्पोरेट पारदर्शिता','కార్పొరేట్ పారదర్శకత','நிறுவன வெளிப்படைத்தன்மை','કોર્પોરેટ પારદર્શિતા'],'Verified. Registered. Accountable.':['सत्यापित। पंजीकृत। जवाबदेह।','ధృవీకరించబడింది. నమోదైంది. జవాబుదారీ.','சரிபார்க்கப்பட்டது. பதிவு செய்யப்பட்டது. பொறுப்புடன்.','ચકાસાયેલ. નોંધાયેલ. જવાબદાર.'],
+'Company Name':['कंपनी का नाम','కంపెనీ పేరు','நிறுவனத்தின் பெயர்','કંપનીનું નામ'],'Corporate Identification Number (CIN)':['कॉर्पोरेट पहचान संख्या (CIN)','కార్పొరేట్ గుర్తింపు సంఖ్య (CIN)','நிறுவன அடையாள எண் (CIN)','કોર્પોરેટ ઓળખ નંબર (CIN)'],'Incorporation Date':['निगमन तिथि','స్థాపన తేదీ','இணைக்கப்பட்ட தேதி','સ્થાપના તારીખ'],'Registrar of Companies':['कंपनी रजिस्ट्रार','కంపెనీల రిజిస్ట్రార్','நிறுவனப் பதிவாளர்','કંપની રજિસ્ટ્રાર'],'NIC Activity Code':['एनआईसी गतिविधि कोड','NIC కార్యకలాప కోడ్','NIC செயல்பாட்டு குறியீடு','NIC પ્રવૃત્તિ કોડ'],'Registered Office':['पंजीकृत कार्यालय','నమోదిత కార్యాలయం','பதிவு செய்யப்பட்ட அலுவலகம்','નોંધાયેલ ઓફિસ'],
+'Leadership':['नेतृत्व','నాయకత్వం','தலைமை','નેતૃત્વ'],'Board of Directors.':['निदेशक मंडल।','డైరెక్టర్ల బోర్డు.','இயக்குநர் குழு.','નિયામક મંડળ.'],'Director':['निदेशक','డైరెక్టర్','இயக்குநர்','નિયામક'],
+'Enterprise Enquiries':['व्यावसायिक पूछताछ','సంస్థల విచారణలు','நிறுவன விசாரணைகள்','એન્ટરપ્રાઇઝ પૂછપરછ'],'Initiate Global Logistics Assessment':['ग्लोबल लॉजिस्टिक्स आकलन शुरू करें','గ్లోబల్ లాజిస్టిక్స్ అసెస్‌మెంట్ ప్రారంభించండి','உலகளாவிய லாஜிஸ்டிக்ஸ் மதிப்பீட்டைத் தொடங்குங்கள்','ગ્લોબલ લોજિસ્ટિક્સ મૂલ્યાંકન શરૂ કરો'],
+'Corporate Email':['कॉर्पोरेट ईमेल','కార్పొరేట్ ఇమెయిల్','நிறுவன மின்னஞ்சல்','કોર્પોરેટ ઇમેઇલ'],'Estimated Monthly Freight Volume':['अनुमानित मासिक माल मात्रा','అంచనా నెలవారీ సరుకు పరిమాణం','மதிப்பிடப்பட்ட மாதாந்திர சரக்கு அளவு','અંદાજિત માસિક માલ જથ્થો'],'Route Requirements':['रूट की आवश्यकताएँ','మార్గ అవసరాలు','வழித்தட தேவைகள்','રૂટની જરૂરિયાતો'],'Select volume':['मात्रा चुनें','పరిమాణం ఎంచుకోండి','அளவைத் தேர்வுசெய்க','જથ્થો પસંદ કરો'],
+'Request Assessment':['आकलन का अनुरोध करें','అసెస్‌మెంట్ అభ్యర్థించండి','மதிப்பீட்டைக் கோருங்கள்','મૂલ્યાંકનની વિનંતી કરો'],'Assessment request received':['अनुरोध प्राप्त हुआ','అభ్యర్థన అందింది','கோரிக்கை பெறப்பட்டது','વિનંતી મળી'],
+'Legal':['कानूनी','చట్టపరమైన','சட்டம்','કાયદાકીય'],'Terms of Service':['सेवा की शर्तें','సేవా నిబంధనలు','சேவை விதிமுறைகள்','સેવાની શરતો'],'Privacy Policy':['गोपनीयता नीति','గోప్యతా విధానం','தனியுரிமைக் கொள்கை','ગોપનીયતા નીતિ'],'Compliance':['अनुपालन','సమ్మతి','இணக்கம்','અનુપાલન'],'Connect':['जुड़ें','కనెక్ట్ అవ్వండి','இணையுங்கள்','જોડાઓ'],
+'Built for Scale © 2026 Sanpritha Private Limited':['विस्तार के लिए निर्मित © 2026 Sanpritha Private Limited','విస్తరణ కోసం నిర్మించబడింది © 2026 Sanpritha Private Limited','விரிவாக்கத்திற்காக உருவாக்கப்பட்டது © 2026 Sanpritha Private Limited','વિસ્તરણ માટે બનાવાયેલ © 2026 Sanpritha Private Limited'],
+'Order received':['ऑर्डर प्राप्त','ఆర్డర్ అందింది','ஆர்டர் பெறப்பட்டது','ઓર્ડર મળ્યો'],'Picked up':['माल उठाया गया','సరుకు తీసుకున్నాం','பொருள் எடுக்கப்பட்டது','માલ ઉપાડ્યો'],'In transit':['रास्ते में','రవాణాలో','வழியில்','માર્ગમાં'],'Customs clearance':['कस्टम क्लीयरेंस','కస్టమ్స్ క్లియరెన్స్','சுங்க அனுமதி','કસ્ટમ્સ ક્લિયરન્સ'],'Out for delivery':['डिलीवरी के लिए निकला','డెలివరీకి బయలుదేరింది','டெலிவரிக்கு புறப்பட்டது','ડિલિવરી માટે નીકળ્યું'],'Delivered':['पहुँचा दिया गया','డెలివరీ అయింది','டெலிவரி செய்யப்பட்டது','ડિલિવર થયું'],'No match':['कोई परिणाम नहीं','సరిపోలిక లేదు','பொருத்தம் இல்லை','કોઈ મેળ નથી'],'Close':['बंद करें','మూసివేయి','மூடு','બંધ કરો']};
+const H=['बुद्धिमान लॉजिस्टिक्स। <span>नए सिरे से तैयार</span> उद्यमों के लिए।','తెలివైన లాజిస్టిక్స్. సంస్థల కోసం <span>కొత్తగా రూపొందించబడింది.</span>','அறிவார்ந்த லாஜிஸ்டிக்ஸ். நிறுவனங்களுக்காக <span>மறுவடிவமைக்கப்பட்டது.</span>','બુદ્ધિશાળી લોજિસ્ટિક્સ. એન્ટરપ્રાઇઝ માટે <span>નવેસરથી તૈયાર.</span>'],H0=$('h1').innerHTML,LG=['en','hi','te','ta','gu'];let cl=0;
+const tr=k=>(cl&&D[k]&&D[k][cl-1])||k,TN=[],tw=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentNode.closest('script,style')?2:n.nodeValue.trim()?1:3});
+while(tw.nextNode())TN.push(tw.currentNode);
+function setLang(l){cl=Math.max(0,LG.indexOf(l));document.documentElement.lang=LG[cl];
+TN.forEach(n=>{const o=n._o||(n._o=n.nodeValue),k=o.trim();if(D[k])n.nodeValue=cl?o.replace(k,D[k][cl-1]):o});
+$('h1').innerHTML=cl?H[cl-1]:H0;$('tid').placeholder=tr('Try SAN-9921');try{localStorage.setItem('lg',LG[cl])}catch(e){}}
+let sv='en';try{sv=localStorage.getItem('lg')||'en'}catch(e){}
+$('lang').value=sv;$('lang').onchange=e=>setLang(e.target.value);setLang(sv);
+</script></body></html>
